@@ -3,7 +3,7 @@
     <Icon v-if="route.name === 'home'" name="words" />
     <nav v-else class="flex flex-col justify-between items-center h-full py-8">
       <span class="blurb font-libre tracking-widest">made of letters that will scatter</span>
-      <span class="logo-mark font-harley">w</span>
+      <RouterLink to="/"><span class="logo-mark font-harley">w</span></RouterLink>
     </nav>
   </div>
 </template>
