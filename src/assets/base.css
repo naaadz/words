@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Libre Bodoni';
+  src: url('@/assets/fonts/libre_bodoni.woff2') format('woff2'),
+    url('@/assets/fonts/libre_bodoni.woff') format('woff'),
+    url('@/assets/fonts/libre_bodoni.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Harley Script';
+  src: url('@/assets/fonts/harley.woff2') format('woff2'),
+    url('@/assets/fonts/harley.woff') format('woff'),
+    url('@/assets/fonts/harley.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Libre Bodoni';
+  color: theme('colors.dark');
+  background: theme('colors.light');
+
+  /* @media (prefers-color-scheme: dark) {
+    color: theme('colors.light');
+    background: theme('colors.dark');
+  } */
+}
+
+.callout {
+  color: theme('colors.white');
+  background: theme('colors.primary');
+  mix-blend-mode: multiply;
+  @apply p-10 pr-14 text-2xl;
+
+    /* @media (prefers-color-scheme: dark) {
+      mix-blend-mode: unset;
+    } */
+}
+
+::selection {
+  color: theme('colors.light');
+  background: theme('colors.dark');
+}

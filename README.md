@@ -1,2 +1,3 @@
 # words
-an exercise in typography
+
+An exercise in typography.
