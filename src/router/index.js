@@ -31,7 +31,6 @@ const sortedRoutes = router
   .sort((a, b) => new Date(a.meta.date) - new Date(b.meta.date));
 
 router.beforeEach((to, from, next) => {
-  console.log('Global beforeEach', to, from);
   if (to.meta.redirectOnMount && sortedRoutes.length > 0) {
     const firstRoute = sortedRoutes[0];
     next({name: firstRoute.name});

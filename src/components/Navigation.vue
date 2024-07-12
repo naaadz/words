@@ -1,13 +1,13 @@
 <template>
   <div v-if="sortedRoutes.length" class="fixed right-0 flex gap-2 p-8 text-primary tracking-widest text-sm">
-    <span>{{ formattedNextRouteDate }}</span>
+    <span>{{ formattedCurrentRouteDate }}</span>
     <span>|</span>
     <button class="underline" @click="goToNext">Next</button>
   </div>
 </template>
 
 <script setup>
-import {defineProps, computed} from 'vue';
+import {defineProps, computed, onMounted} from 'vue';
 import {useRouter, useRoute} from 'vue-router';
 
 const props = defineProps({
@@ -28,9 +28,9 @@ const nextRoute = computed(() => {
   return props.sortedRoutes[nextIndex];
 });
 
-// Computed property for displaying the date of the next route
-const formattedNextRouteDate = computed(() => {
-  const date = new Date(nextRoute.value?.meta.date);
+// Computed property for displaying the date of the current route
+const formattedCurrentRouteDate = computed(() => {
+  const date = route?.meta?.date ? new Date(route?.meta?.date) : null;
   if (date) {
     return new Intl.DateTimeFormat('en-US', {
       month: 'long',
