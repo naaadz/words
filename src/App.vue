@@ -1,14 +1,16 @@
 <template>
   <div class="h-screen">
-    <Header />
+    <Header :sortedRoutes="sortedRoutes" />
+    <Navigation :sortedRoutes="sortedRoutes" />
     <RouterView />
   </div>
 </template>
 
 <script setup>
-import {ref, onMounted} from 'vue';
-import {RouterLink, RouterView} from 'vue-router';
+import {RouterView} from 'vue-router';
+import {sortedRoutes} from '@/router';
 import Header from '@/components/Header.vue';
+import Navigation from '@/components/Navigation.vue';
 </script>
 
 <style scoped></style>
