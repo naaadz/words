@@ -21,6 +21,18 @@ const router = createRouter({
       name: 'grind',
       component: () => import('../views/GrindView.vue'),
       meta: {date: '2024-07-11'}
+    },
+    {
+      path: '/mansplain',
+      name: 'mansplain',
+      component: () => import('../views/MainsplainingView.vue'),
+      meta: {date: '2024-07-12'}
+    },
+    {
+      path: '/you-have-to-love',
+      name: 'you-have-to-love',
+      component: () => import('../views/YouHaveToLoveView.vue'),
+      meta: {date: '2024-07-13'}
     }
   ]
 });

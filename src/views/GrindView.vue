@@ -21,8 +21,14 @@
           how to make their code better. I love the collaborative process. I love the feeling of solving really
           difficult bugs. I even love testing.</span
         >
-        <span class="text-xl leading-6"
-          >No matter how much I love it, some days are just a fucking grind. And that’s ok.</span
+        <span class="text-xl leading-6 font-bold"
+          >No matter how much I love it, some days are just a fucking grind. And that’s
+          <a
+            class="text-primary underline"
+            href="https://www.reddit.com/r/ExperiencedDevs/comments/weicva/comment/iiogsqo/"
+            target="_blank"
+            >ok</a
+          >.</span
         >
       </div>
     </div>
