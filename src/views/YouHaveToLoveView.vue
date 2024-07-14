@@ -37,7 +37,7 @@
 }
 
 .inner p {
-  margin-block: 2rem;
+  margin-block: 3rem;
   margin-inline: auto;
 }
 
@@ -47,12 +47,10 @@
 
 .believe {
   @apply tracking-tight;
-  text-align: right;
   padding-left: 4rem;
 }
 
 .life {
-  text-align: justify;
   padding-left: 4rem;
 }
 </style>

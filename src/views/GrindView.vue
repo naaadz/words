@@ -1,7 +1,7 @@
 <template>
   <div class="absolute h-screen w-full flex flex-col items-center justify-center">
     <div class="flex">
-      <div class="left flex flex-col gap-4">
+      <div class="left flex flex-col gap-8">
         <div class="callout bg-primary p-10 pr-14">
           <span>If you love what you do, you never work a day in your life. Devs, how true is this?</span>
         </div>
@@ -24,7 +24,7 @@
         <span class="grind leading-6 font-bold"
           >No matter how much I love it, some days are just a fucking grind. And that’s
           <a
-            class="text-primary underline"
+            class="underline"
             href="https://www.reddit.com/r/ExperiencedDevs/comments/weicva/comment/iiogsqo/"
             target="_blank"
             >ok</a

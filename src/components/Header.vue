@@ -1,9 +1,9 @@
 <template>
   <div v-if="sortedRoutes.length" class="header fixed z-10">
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <Icon v-if="isFirstRoute" name="words" class="text-primary fixed left-0 h-full" />
       <nav v-else class="fixed left-0 h-full flex flex-col justify-between items-center h-full py-8">
-        <span class="blurb text-primary font-libre tracking-widest">made of letters that will scatter</span>
+        <span class="blurb text-primary font-libre tracking-widest">words made of letters that will scatter</span>
         <RouterLink to="/"><span class="logo-mark text-primary font-harley">w</span></RouterLink>
       </nav>
     </transition>

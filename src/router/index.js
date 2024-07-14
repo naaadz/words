@@ -14,30 +14,36 @@ const router = createRouter({
       path: '/always-you',
       name: 'always-you',
       component: () => import('../views/AlwaysView.vue'),
-      meta: {date: '2024-07-08'}
+      meta: {date: '2024-04-22'}
     },
     {
       path: '/grind',
       name: 'grind',
       component: () => import('../views/GrindView.vue'),
-      meta: {date: '2024-07-11'}
+      meta: {date: '2024-05-15'}
     },
     {
       path: '/mansplain',
       name: 'mansplain',
       component: () => import('../views/MainsplainingView.vue'),
-      meta: {date: '2024-07-12'}
+      meta: {date: '2024-06-05'}
     },
     {
       path: '/you-have-to-love',
       name: 'you-have-to-love',
       component: () => import('../views/YouHaveToLoveView.vue'),
-      meta: {date: '2024-07-13'}
+      meta: {date: '2024-07-01'}
     },
     {
       path: '/home-no-matter-what',
       name: 'home-no-matter-what',
       component: () => import('../views/HomeNoMatterWhatView.vue'),
+      meta: {date: '2024-07-13'}
+    },
+    {
+      path: '/every-human-heart',
+      name: 'every-human-heart',
+      component: () => import('../views/EveryHumanHeartView.vue'),
       meta: {date: '2024-07-14'}
     }
   ]

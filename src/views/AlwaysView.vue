@@ -29,7 +29,7 @@
 
 <style scoped>
 .inner {
-  width: 300px;
+  width: 18.75rem;
   margin-left: 10rem;
 }
 
@@ -38,6 +38,6 @@
   font-size: 2.8rem;
   margin-left: -14rem;
   padding: 1.5rem;
-  width: 350px;
+  width: 21.8rem;
 }
 </style>
