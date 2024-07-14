@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto h-full flex flex-col items-center justify-center">
-    <div class="relative w-[300px]">
+  <div class="absolute h-screen w-full flex flex-col items-center justify-center">
+    <div class="inner relative">
       <p>
         My secrets became yours, and they turned out to not be secrets at all. But the embodiment of an authenticity
         embraced. To be seen and loved. You are arcane. You desired and earned a trust that only knew the dark. It was
@@ -8,7 +8,7 @@
         You are intuitive. Time rippled when your hand laced mine. I watched you move unopposed. Felt the pulse of you
         saturating my life.
       </p>
-      <span class="notch text-primary leading-10 text-right">It will always be you.</span>
+      <span class="pullout text-primary leading-10 text-right">It will always be you.</span>
       <p class="mt-4">
         You unraveled me with the ease of someone who had known my soul from the beginning. You gave me refuge. I sought
         shelter from storms in you. And you fought my battles with pride. There was a ferocity in your devotion. It is
@@ -28,7 +28,12 @@
 </template>
 
 <style scoped>
-.notch {
+.inner {
+  width: 300px;
+  margin-left: 10rem;
+}
+
+.pullout {
   float: left;
   font-size: 2.8rem;
   margin-left: -14rem;

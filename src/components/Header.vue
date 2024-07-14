@@ -1,10 +1,12 @@
 <template>
-  <div v-if="sortedRoutes.length" class="header fixed h-full">
-    <Icon v-if="isFirstRoute" name="words" />
-    <nav v-else class="flex flex-col justify-between items-center h-full py-8">
-      <span class="blurb font-libre tracking-widest">made of letters that will scatter</span>
-      <RouterLink to="/"><span class="logo-mark font-harley">w</span></RouterLink>
-    </nav>
+  <div v-if="sortedRoutes.length" class="header fixed z-10">
+    <transition name="fade">
+      <Icon v-if="isFirstRoute" name="words" class="text-primary fixed left-0 h-full" />
+      <nav v-else class="fixed left-0 h-full flex flex-col justify-between items-center h-full py-8">
+        <span class="blurb text-primary font-libre tracking-widest">made of letters that will scatter</span>
+        <RouterLink to="/"><span class="logo-mark text-primary font-harley">w</span></RouterLink>
+      </nav>
+    </transition>
   </div>
 </template>
 
@@ -25,9 +27,12 @@ const isFirstRoute = computed(() => {
 </script>
 
 <style scoped lang="postcss">
+.header {
+  mix-blend-mode: var(--blendmode);
+}
+
 .blurb,
 .logo-mark {
-  color: theme('colors.primary');
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
@@ -40,6 +45,5 @@ const isFirstRoute = computed(() => {
 
 .icon :deep(svg) {
   height: 100vh;
-  color: theme('colors.primary');
 }
 </style>

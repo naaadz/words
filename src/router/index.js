@@ -33,6 +33,12 @@ const router = createRouter({
       name: 'you-have-to-love',
       component: () => import('../views/YouHaveToLoveView.vue'),
       meta: {date: '2024-07-13'}
+    },
+    {
+      path: '/home-no-matter-what',
+      name: 'home-no-matter-what',
+      component: () => import('../views/HomeNoMatterWhatView.vue'),
+      meta: {date: '2024-07-14'}
     }
   ]
 });

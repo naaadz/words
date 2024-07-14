@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto h-full flex flex-col items-center justify-center">
+  <div class="absolute h-screen w-full flex flex-col items-center justify-center">
     <div class="inner">
       <p class="change text-3xl">
         <span class="dropcap font-harley text-primary">w</span> hen you change the way you look at things, the things
@@ -42,9 +42,11 @@
 }
 
 .change {
+  @apply tracking-tight;
 }
 
 .believe {
+  @apply tracking-tight;
   text-align: right;
   padding-left: 4rem;
 }

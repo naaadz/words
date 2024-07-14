@@ -25,26 +25,43 @@
 body {
   font-family: 'Libre Bodoni';
   color: theme('colors.dark');
-  background: theme('colors.light');
+  background-color: theme('colors.light');
+  transition: color 1s, background-color 1s;
+}
 
-  /* @media (prefers-color-scheme: dark) {
-    color: theme('colors.light');
-    background: theme('colors.dark');
-  } */
+body.dark-mode {
+  color: theme('colors.light');
+  background-color: theme('colors.dark');
+}
+
+:root {
+  --blendmode: multiply;
+}
+
+body.dark-mode {
+  --blendmode: screen;
 }
 
 .callout {
   color: theme('colors.white');
-  background: theme('colors.primary');
-  mix-blend-mode: multiply;
-  @apply p-10 pr-14 text-2xl;
-
-    /* @media (prefers-color-scheme: dark) {
-      mix-blend-mode: unset;
-    } */
+  mix-blend-mode: var(--blendmode);
 }
 
 ::selection {
   color: theme('colors.light');
   background: theme('colors.dark');
 }
+
+body.dark-mode ::selection {
+  color: theme('colors.dark');
+  background: theme('colors.light');
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+

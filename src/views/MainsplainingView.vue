@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto h-full flex flex-col items-center justify-center">
+  <div class="absolute h-screen w-full flex flex-col items-center justify-center">
     <div class="inner relative flex gap-12">
       <div class="col col-1 flex-1">
         <p>
@@ -91,9 +91,8 @@
 }
 
 .pullout-spacer {
-  height: 12rem;
+  height: 10rem;
   width: 11rem;
-  background: white;
 }
 
 .col-1 .pullout-spacer {
@@ -107,10 +106,10 @@
 }
 
 .dropcap {
-  @apply mix-blend-multiply;
+  mix-blend-mode: var(--blendmode);
   font-size: 25rem;
   left: -3.5rem;
-  top: -7rem;
+  top: -5rem;
 }
 
 .pullout {
@@ -119,18 +118,19 @@
   width: 22rem;
   font-size: 2.3rem;
   padding: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.1;
   transform: translateY(0.5rem);
-  /*background: rgba(209, 235, 14, 0.5);*/
 }
 
 .inner {
   width: 46.87rem;
+  margin-left: 5rem;
 }
 
 .inner p {
   @apply text-justify hyphens-auto;
   font-size: 0.85rem;
   margin-block: 1rem;
+  line-height: 1.3;
 }
 </style>

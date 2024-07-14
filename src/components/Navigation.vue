@@ -1,14 +1,25 @@
 <template>
-  <div v-if="sortedRoutes.length" class="fixed right-0 flex gap-2 p-8 text-primary tracking-widest text-sm">
+  <nav
+    v-if="sortedRoutes.length"
+    class="fixed top-0 right-0 flex gap-4 items-center p-8 text-primary tracking-widest text-sm z-10"
+  >
+    <button class="mode" @click="darkMode ? toggleDarkMode() : null" :disabled="!darkMode" title="Light mode">
+      <Icon name="sun" class="w-6" />
+    </button>
+    <button class="mode" @click="!darkMode ? toggleDarkMode() : null" :disabled="darkMode" title="Dark mode">
+      <Icon name="moon" class="w-4 stroke-2" />
+    </button>
+    <span>|</span>
     <span>{{ formattedCurrentRouteDate }}</span>
     <span>|</span>
     <button class="underline" @click="goToNext">Next</button>
-  </div>
+  </nav>
 </template>
 
 <script setup>
-import {defineProps, computed, onMounted} from 'vue';
+import {ref, defineProps, computed} from 'vue';
 import {useRouter, useRoute} from 'vue-router';
+import Icon from '@/components/Icon.vue';
 
 const props = defineProps({
   sortedRoutes: Array
@@ -16,6 +27,7 @@ const props = defineProps({
 
 const router = useRouter();
 const route = useRoute();
+const darkMode = ref(false);
 
 // Find current route index reactively
 const currentRouteIndex = computed(() => {
@@ -44,4 +56,24 @@ const formattedCurrentRouteDate = computed(() => {
 const goToNext = () => {
   router.push({name: nextRoute.value.name});
 };
+
+// Toggle dark mode
+const toggleDarkMode = () => {
+  darkMode.value = !darkMode.value;
+  document.body.classList.toggle('dark-mode', darkMode.value);
+};
 </script>
+
+<style scoped>
+button.mode :deep(svg) {
+  stroke: currentColor;
+}
+
+button.mode[disabled] {
+  color: theme('colors.primary');
+}
+
+button.mode:not([disabled]) :deep(svg) {
+  fill: none;
+}
+</style>
