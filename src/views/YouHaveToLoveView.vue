@@ -26,7 +26,7 @@
 <style scoped lang="postcss">
 .dropcap {
   font-size: 25rem;
-  line-height: 0.2;
+  line-height: 0.24;
   float: left;
   shape-outside: polygon(82.69% 6px, 81.61% 73.23%, 95.76% 54.27%, 65.8% 146%, 59.57% 207.24%, 24px 175%, 8px 7px);
   padding-right: 2rem;

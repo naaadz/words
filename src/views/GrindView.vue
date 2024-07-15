@@ -68,7 +68,7 @@
 .you {
   font-size: 6.5rem;
   left: 48%;
-  top: 5%;
+  top: 3%;
 }
 
 .know {
