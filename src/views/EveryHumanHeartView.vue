@@ -35,8 +35,8 @@
   float: left;
   line-height: 0.42;
   shape-outside: polygon(
-    72.63% -44px,
-    49.6% 43.32%,
+    80.08% -40px,
+    53.32% 42.98%,
     48.29% 73.23%,
     94.7% 51.49%,
     64.48% 110.67%,
@@ -62,7 +62,7 @@
 .second .dropcap {
   float: right;
   line-height: 0.6;
-  shape-outside: polygon(72.63% -44px, 59% 108.09%, 8.13% 107.12%, 6.05% 83.46%, 16.01% 57.97%, 70px 44.83%, 91px 13px);
+  shape-outside: polygon(72.63% -44px, 59% 108.09%, 8.13% 107.12%, 6.05% 83.46%, 19.46% 58.45%, 70px 44.83%, 91px 13px);
   padding-left: 4.5rem;
 }
 
