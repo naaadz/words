@@ -14,9 +14,9 @@
 
 @font-face {
   font-family: 'Harley Script';
-  src: url('/fonts/harley.woff2') format('woff2'),
-    url('/fonts/harley.woff') format('woff'),
-    url('/fonts/harley.ttf') format('truetype');
+  src: url('/fonts/harley-webfont.woff2') format('woff2'),
+    url('/fonts/harley-webfont.woff') format('woff'),
+    url('/fonts/harley-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;

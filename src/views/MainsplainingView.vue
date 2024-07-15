@@ -109,7 +109,7 @@
   mix-blend-mode: var(--blendmode);
   font-size: 25rem;
   left: -3.5rem;
-  top: -5rem;
+  top: -7.5rem;
 }
 
 .pullout {

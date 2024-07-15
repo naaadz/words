@@ -56,6 +56,8 @@
   font-size: 25rem;
   line-height: 0.1;
   z-index: -1;
+  position: relative;
+  top: -3rem;
 }
 
 .callout {

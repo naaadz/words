@@ -21,7 +21,7 @@
 <style scoped lang="postcss">
 .inner {
   width: 31.25rem;
-  top: -5rem;
+  top: -8rem;
   left: 10rem;
 }
 
@@ -51,34 +51,27 @@
   line-height: 1;
   width: 20rem;
   font-style: italic;
+  padding-top: 4rem;
 }
 
 .second {
-  left: -10.3rem;
-  top: -2.1rem;
+  left: -11.3rem;
+  top: -4.1rem;
 }
 
 .second .dropcap {
   float: right;
-  line-height: 0.5;
-  shape-outside: polygon(
-    72.63% -44px,
-    44.17% 96.83%,
-    12.61% 98.25%,
-    12.25% 77.71%,
-    15.3% 61.09%,
-    47px 46.27%,
-    91px 13px
-  );
+  line-height: 0.6;
+  shape-outside: polygon(72.63% -44px, 59% 108.09%, 8.13% 107.12%, 6.05% 83.46%, 16.01% 57.97%, 70px 44.83%, 91px 13px);
   padding-left: 4.5rem;
 }
 
 .runs-thru {
   font-size: 1.6rem;
   line-height: 1;
-  width: 20rem;
+  width: 21rem;
   font-style: italic;
   text-align: right;
-  padding-top: 9rem;
+  padding-top: 15rem;
 }
 </style>

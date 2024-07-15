@@ -26,10 +26,12 @@
 <style scoped lang="postcss">
 .dropcap {
   font-size: 25rem;
-  line-height: 0.3;
+  line-height: 0.2;
   float: left;
-  shape-outside: polygon(88.43% -36px, 74.1% 34.9%, 93.99% 33.85%, 84.79% 55.17%, 74.15% 98.49%, 0px 100%, 5px -25px);
+  shape-outside: polygon(82.69% 6px, 81.61% 73.23%, 95.76% 54.27%, 65.8% 146%, 59.57% 207.24%, 24px 175%, 8px 7px);
   padding-right: 2rem;
+  top: -1.6rem;
+  position: relative;
 }
 
 .inner {

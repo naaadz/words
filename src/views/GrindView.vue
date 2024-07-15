@@ -1,7 +1,7 @@
 <template>
   <div class="absolute h-screen w-full flex flex-col items-center justify-center">
     <div class="flex">
-      <div class="left flex flex-col gap-8">
+      <div class="left flex flex-col gap-6">
         <div class="callout bg-primary p-10 pr-14">
           <span>If you love what you do, you never work a day in your life. Devs, how true is this?</span>
         </div>
